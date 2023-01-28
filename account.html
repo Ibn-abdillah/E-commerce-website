@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account-Page - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+     <div class="product-page">
+                      <!----------- Navbar ------------->
+        <div class="navbar">
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+            <nav>
+                <ul id="showmenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="productDetails.html">Product Details</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+                <a href="cart.html"><img src="images/cart.png" class="cart"></a>
+                <img src="images/menu.png" id="menu">
+            </nav>
+          </div>
+      </div>
+
+           <!--------------- Page content ------------->
+   <div class="account">
+    <div class="row">
+
+        <div class="row-items">
+            <img src="images/image1.png">
+        </div>
+
+        <div class="row-items">
+            <div class="form-container">
+                <div class="form-title">
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="indicator">
+                </div>
+
+                    <form id="login-form">
+                        <input type="text" placeholder="Username or Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit">Login</button>
+                        <a href="#">Forget password ?</a>
+                    </form>
+
+                    <form id="reg-form">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit">Register</button>
+                    </form>
+            </div>
+        </div>
+       </div>
+   </div>
+
+              <!------------ Logos -------------------->
+    <div class="logos">
+        <div class="row">
+            <div class="row-items">
+                <img src="images/logo-godrej.png">
+            </div>
+
+            <div class="row-items">
+                <img src="images/logo-oppo.png">
+            </div>
+
+            <div class="row-items">
+                <img src="images/logo-coca-cola.png">
+            </div>
+
+            <div class="row-items">
+                <img src="images/logo-paypal.png">
+            </div>
+
+            <div class="row-items">
+                <img src="images/logo-philips.png">
+            </div>
+        </div>
+    </div>
+
+                  <!---------- footer -------->
+    <div class="footer">
+        <div class="row">
+            <div class="row-items">
+                <h4>Dawnload Our App</h4>
+                <span>Dawnload App for Androids and Iphone</span>
+               <div class="footer-img">
+                <img src="images/play-store.png">
+                <img src="images/app-store.png">
+               </div>
+            </div>
+
+            <div class="row-items turn">
+                <img src="images/logo-white.png">
+                <h4>Try Us Today</h4>
+                <span>Quality goods are avalable, make your other now !</span>
+            </div>
+
+            <div class="row-items">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Blog Post</a></li>
+                    <li><a href="#">Join Affiliate</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                </ul>
+            </div>
+
+            <div class="row-items">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook <i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#">Twitter <i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="#">WhatsApp <i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li><a href="#">Instagram <i class="fa-brands fa-square-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+        
+        <p class="copyright">
+            Designed by Ibn-Abdillah
+        </p>
+    </div>
+
+                  <!--------------- javascript code for the account page ----------->
+   
+ <script>
+        let regForm = document.getElementById("reg-form")
+        let loginForm = document.getElementById("login-form")
+        let indicator = document.getElementById("indicator")
+
+  function register(){
+    regForm.style.transform = "translateX(0)"
+    loginForm.style.transform = "translateX(0)"
+    indicator.style.transform = "translateX(40px)"
+  }
+
+  function login(){
+    loginForm.style.transform = "translateX(300px)"
+    regForm.style.transform = "translateX(300px)"
+    indicator.style.transform = "translateX(-40px)"
+  }
+
+</script>
+
+    <script src="index.js"></script>
+</body>
+</html>
